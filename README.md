@@ -1,4 +1,14 @@
-baxter-imp
-==========
+Baxter (imp client)
+=============
 
-Baxter will help you and authorized guests control and automate your home, using Electric Imp, OAuth, and any peripherals you care to install. This is the repository for Electric Imp's software.
+##In development
+
+You can probably tell Baxter isn't ready yet. Follow [@W0lftron](https://twitter.com/W0lftron) for updates!
+
+##About
+
+The Baxter imp is designed to interface with a single instance of the Baxter web app.
+
+##License
+
+Baxter, both app and imp, are released under the MIT license.
