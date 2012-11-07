@@ -17,13 +17,13 @@ So far there's only one kind of imp in the repository:
 
 ###Trigger (pin1)
 
-Input ports: HTTP In “Trigger”
-Output ports: HTTP Out “Response”, HTTP Out “Phone”
-Output pins: Digital out (OD & Pull-up) on pin1.
+*Input ports:* HTTP In “Trigger”  
+*Output ports:* HTTP Out “Response”, HTTP Out “Phone”  
+*Output pins:* Digital out (OD & Pull-up) on pin1.
 
 ######Functionality
 
-Trigger (pin1) will receive a JSON of `{"value": 1}` and nothing else in order to give pin1 0.5 seconds of signal. When it has done that, it will send a request to confirm. This also phones home every 4 minutes to make sure the imp and the NAT stay awake. If you disable this, it's possible the imp will become less reliable.
+If Trigger (pin1) receives `{"value": 1}` through its “Trigger” port, it writes `1` to pin1 for 0.5 seconds, then writes `0`. When it has done that, it will send a request to confirm it's done. This also phones home every 4 minutes to make sure the imp and the NAT stay awake. If you disable this, it's possible the imp will become less reliable.
 
 ######Integrating with Baxter-app
 
