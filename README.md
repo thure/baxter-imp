@@ -7,7 +7,7 @@ You can probably tell Baxter isn't ready yet. Watch this repo or follow [@W0lftr
 
 ##About
 
-The Baxter imp is designed to interface with a single instance of the [Baxter web app](https://github.com/thure/baxter-app). It's designed to run on an [Electric Imp](http://electricimp.com).
+Baxter imps are designed to interface with a single instance of the [Baxter web app](https://github.com/thure/baxter-app). It's designed to run on an [Electric Imp](http://electricimp.com).
 
 ##Menu
 
