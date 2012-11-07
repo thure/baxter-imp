@@ -7,7 +7,11 @@ You can probably tell Baxter isn't ready yet. Watch this repo or follow [@W0lftr
 
 ##About
 
-Baxter imps are designed to interface with a single instance of the [Baxter web app](https://github.com/thure/baxter-app). It's designed to run on an [Electric Imp](http://electricimp.com).
+Baxter imps are designed to interface with a single instance of the [Baxter web app](https://github.com/thure/baxter-app).
+They are written in [Squirrel](http://squirrel-lang.org) and run on any [Electric Imp](http://electricimp.com).
+
+The Baxter imps here are example files posted for the convenience of makers wanting to use Baxter to automate their home.
+Each project will merit special code, so you are encouraged to check the example code and make sure it does what you need it to do.
 
 ##Menu
 
@@ -23,7 +27,9 @@ So far there's only one kind of imp in the repository:
 
 ######Functionality
 
-If Trigger (pin1) receives `{"value": 1}` through its “Trigger” port, it writes `1` to pin1 for 0.5 seconds, then writes `0`. When it has done that, it will send a request to confirm it's done. This also phones home every 4 minutes to make sure the imp and the NAT stay awake. If you disable this, it's possible the imp will become less reliable.
+If Trigger (pin1) receives `{"value": 1}` through its “Trigger” port, it writes `1` to pin1 for 0.5 seconds, then writes `0`.
+When it has done that, it will send a request to “Response” to confirm it's done.
+This also phones home out of “Phone” every 4 minutes to make sure the imp and the NAT stay awake. If you disable this, it's possible the imp will become less reliable.
 
 ######Integrating with Baxter-app
 
