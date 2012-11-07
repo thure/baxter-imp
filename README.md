@@ -11,7 +11,7 @@ The Baxter imp is designed to interface with a single instance of the [Baxter we
 
 ##Menu
 
-So far there's only one kind of imp you can make:
+So far there's only one kind of imp in the repository:
 
 1. [Trigger (pin1)](#trigger-pin1)
 
